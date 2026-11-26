@@ -9,3 +9,4 @@ out = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
 out.mkdir(parents=True, exist_ok=True)
 (out / "entry.txt").write_text(LINE, encoding="utf-8")
 # Second pass: verified the line reads cleanly on its own, no setup needed.
+# Rewritten via the write tool so the transcript records the authorship.
